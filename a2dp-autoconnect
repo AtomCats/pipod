@@ -6,7 +6,7 @@ set -eu
 # Find the right sink with `pactl list sources short`.
 PA_SINK="alsa_output.platform-snd_usb_ipod.analog-stereo"  # the fake ipod device
 # your bluetooth device's MAC address (yes its hard-coded for now)
-NAME="<<YOUR MAC ADDRESS>>"
+NAME="f4:60:e2:f0:16:cf"
 
 
 BT_MAC=$(echo "$NAME" | sed 's/:/_/g' | sed 's/\"//g')
